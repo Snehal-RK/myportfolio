@@ -12,14 +12,14 @@ const Footer = () => {
     const fetchCounts = async () => {
       try {
         // **Important:** Replace these URLs with your actual backend endpoints
-        const viewCountResponse = await fetch('/api/views-mysql'); //  Endpoint to get view count
+        const viewCountResponse = await fetch('/.netlify/functions/views'); //  Endpoint to get view count
         if (!viewCountResponse.ok) {  // **Check for a successful response**
           throw new Error(`Failed to fetch views: ${viewCountResponse.status}`);
         }
         const viewCountData = await viewCountResponse.json();
         setViewCount(viewCountData.count);
 
-        const visitorCountResponse = await fetch('/api/visitors-mysql'); // Endpoint to get visitor count
+        const visitorCountResponse = await fetch('/.netlify/functions/visitors'); // Endpoint to get visitor count
          if (!visitorCountResponse.ok) { // **Check for a successful response**
             throw new Error(`Failed to fetch visitors: ${visitorCountResponse.status}`);
          }
