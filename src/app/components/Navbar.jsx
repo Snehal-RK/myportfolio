@@ -35,7 +35,7 @@ const Navbar = () => {
             
             <Link href={'/'} className='text-2xl md:text-5xl text-white font-semibold'>
                 <Image 
-                    src="/Images/rjlogocolored.png"
+                    src="/Images/logo.png"
                     alt='Logo'
                     width={80}
                     height={80}
