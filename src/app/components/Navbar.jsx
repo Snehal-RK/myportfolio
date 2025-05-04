@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className='flex flex-wrap items-center justify-between mx-auto px-4'>
             
             <Link href={'/'} className='text-2xl md:text-5xl text-white font-semibold'>
-                <Image 
+                <img 
                     src="/Images/logo.png"
                     alt='Logo'
                     width={80}

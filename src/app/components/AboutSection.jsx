@@ -74,7 +74,7 @@ const AboutSection = () => {
                 animate = { isImageInView ? "animate" : "initial" }
                 transition={{ duration : 1 }}
                 >
-                <Image src="/Images/aboutme.png" alt='about me' width={500} height={500} />
+                <img src="/Images/aboutme.png" alt='about me' width={500} height={500} />
             </motion.div>
 
             <div className='mt-4 md:mt-0 text-left flex flex-col h h-full'>
